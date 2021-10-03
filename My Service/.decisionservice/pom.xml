@@ -13,6 +13,11 @@
     <dependencies>
         <dependency>
             <groupId>decisions.my_getting_started.my_service</groupId>
+            <artifactId>data</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>decisions.my_getting_started.my_service</groupId>
             <artifactId>myModel</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
@@ -29,6 +34,7 @@
     </dependencies>
 
     
+
 
 <build>
         <resources>
@@ -54,6 +60,15 @@
                         </goals>
                         <configuration>
                             <artifactItems>
+                                <artifactItem>
+                                    <groupId>decisions.my_getting_started.my_service</groupId>
+                                    <artifactId>data</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
                                 <artifactItem>
                                     <groupId>decisions.my_getting_started.my_service</groupId>
                                     <artifactId>myModel</artifactId>

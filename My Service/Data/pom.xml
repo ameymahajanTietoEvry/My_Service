@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>decisions.my_getting_started.my_service</groupId>
-    <artifactId>myModel</artifactId>
+    <artifactId>data</artifactId>
     <version>LATEST-SNAPSHOT</version>
     <packaging>decision-library</packaging>
 
@@ -20,21 +20,14 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>My-Model</name>
+                            <name>Data</name>
                         </deployment>
                     </deployments>
-                <packageName>decisions.my_getting_started.my_service.mymodel</packageName>
+                <packageName>decisions.my_getting_started.my_service.data</packageName>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
-<dependencies>
-        <dependency>
-            <groupId>decisions.my_getting_started.my_service</groupId>
-            <artifactId>data</artifactId>
-            <type>decision-library</type>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+<dependencies/>
 </project>

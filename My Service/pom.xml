@@ -18,6 +18,7 @@
         <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
     </properties>
     <modules>
+        <module>Data</module>
         <module>My Model</module>
         <module>.decisionservice</module>
     </modules>
